@@ -1,0 +1,151 @@
+body {
+  background-color: rgb(253, 251, 251);
+  font-family:'Times New Roman', Times, serif;
+  color: #000000;
+  font-size: medium;
+  line-height: normal;
+}
+
+/* -----------------HEADER------------------- */
+
+#cabecalho {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  background-color: rgb(255, 253, 253);
+  max-height: 60px;
+}
+
+h1#titulo {
+  display: inline-block;
+  max-width: 50%; /* limit the screen size of the h1, to allow nav's space inside the header */
+}
+
+/* ----------------NAVBAR------------------ */
+
+#cabecalho nav ul {
+  float: right;    
+  display: flex; /* flex layout allows responsive elements within a container to be automatically arranged depending upon screen size (or device) */
+}
+
+#cabecalho nav ul li {/* Navbar List */
+  text-decoration: none;
+  margin: 0 20px;
+  font-style: oblique;
+  list-style: none;
+}
+
+#cabecalho nav ul li a {/* Navbar Links */
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+}
+
+/* -------------MAIN------------- */
+main {
+  margin-top: 30px;
+  clear: both; /* clean float default config: https://tableless.github.io/iniciantes/manual/css/float-clear.html */
+  display: inline-block;
+}
+
+.main {
+  margin-top: 30px;
+  clear: both; /* clean float default config: https://tableless.github.io/iniciantes/manual/css/float-clear.html */
+  text-align: center;
+}
+
+img#minha_foto {
+  padding-top: 20px;
+  width: 35%; /* having % instead of px allows responsiveness no matter the size of the screen, in this case to not push .hello class far away from the picture */
+  height: 35%;
+  border-radius: 50% /* rounded shape instead of a square image */
+}
+
+.hello {
+  padding-bottom: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+h3.hello {
+  font-size: 25px;
+}
+
+article.intro {
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 20px;
+  background-color:rgb(235, 235, 235)
+}
+
+article {
+  display: inline-block; /* inline-block makes the element generate a block box that's laid out as if it were an inline box. Font: https://www.impressivewebs.com/inline-block/ */
+}
+
+section {
+  display: inline-block;
+}
+
+aside {
+  display: inline-block;
+  padding: 20px;
+  padding-bottom: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 20px;
+  background-color:rgb(235, 235, 235)
+}
+
+.skills {
+  padding-top: 30px;
+  /*  display: inline-block; /* grid is a set of intersecting horizontal and vertical lines defining columns and rows. Elements can be placed onto the grid within these column and row lines. This video gave me the idea https://youtu.be/FwiSbmyNQ18 */ 
+}
+
+#articles {
+  text-align: center;
+  display: block;
+  justify-content: space-around;
+
+}
+
+.lado-esquerdo {
+  margin: auto;
+  display: inline-block;
+  max-width: 30%;
+  padding: 20px;
+}
+
+.lado-direito {
+  margin: auto;
+  display: inline-block;
+  max-width: 30%;
+}
+
+#licoes_a_aprender {
+  list-style: none; /* not showing bullet list default style */
+}
+
+img.icon { /* images source: https://www.flaticon.com/ */
+  max-width: 50px;
+  margin: auto; 
+}
+
+/* ------------FOOTER------------- */
+footer#rodape {   /* Idea from: https://css-tricks.com/snippets/css/fixed-footer/ */
+  position: fixed;
+  padding-bottom: 5px;
+  left: 0px;
+  bottom: 0px;
+  height: 35px;
+  width: 100%;
+  text-align: right;
+}
+
+.contact {
+  max-width: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* every icon in this website was used from https://www.flaticon.com */

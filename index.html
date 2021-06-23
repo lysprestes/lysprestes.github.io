@@ -1,59 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Lys Prestes</title>
-</head>
-<body>
-    <header>
-        <h1>Hi there👋 I'm Lys!</h1>
-        <h2>Full Stack Dev Student</h2>
-        <h3>Greater Toronto Area, Canada</h3>
-
-        <img id="selfie" src="selfielys.jpg"><br>
-
-        <nav id=menu>
-            <ul>
-                <li class="menu"><a href="#about">About</a></li>
-                <li class="menu"> <a href="#hardSkills">Hard Skills</a></li>
-                <li class="menu"><a href="#softSkills">Soft Skills</a></li>
-            </ul>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Lessons Learned Project</title>
+  </head>
+  
+  <body>
+    <header id=cabecalho>
+        <nav>
+          <h1 id=titulo>Lys Prestes's Portfoleo</h1>
+          <ul>
+            <li><a href="#intro">About me</a></li>
+            <li><a href="#licoes_aprendidas">Skills</a></li>
+            <li><a href="#licoes_a_aprender">Learning list</a></li>
+            <li><a href="https://www.linkedin.com/in/lysprestes/" target="_blank">Contact</a></li>
+          </ul>
         </nav>
-
     </header>
-
-    <main >
-        <h3 class="titles" id="about">About me:</h3>
-        <p>I am a natural problem solver and deeply interested in understanding how things work. <br>
-        I'm also a great cook!
-        </p>
-        <p class="dots"></p>
-
-        <h3 class="titles" id="hardSkills">Hard Skills:</h3>
-        <ul>
-            <li>Git & GitHub</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <p>and more!</p>
-        </ul>
-        <p class="dots"></p>
-
-        <h3 class="titles" id="softSkills">Soft Skills:</h3>
-        <ul>
-            <li>Organized</li>
-            <li>Communicative</li>
-            <li>Great team player</li>
-        </ul>
-    </main>
     
-    <footer>
-        <p><Let href="">Let's get in touch!</a></p>
-            <a href="https://www.linkedin.com/in/lysprestes/"><img src="https://image.flaticon.com/icons/png/512/174/174857.png" height="50px"> </a> 
-    </footer>
-    
-        
-    </body>
+    <main>
+      <div class=main>
+        <img id="minha_foto" src="images/selfie.jpg" alt="">
+        </div>
+          <h1 class=hello>Hi there 👋 I'm Lys</h1>
+          <h2 class=hello>I am a Web Development student</h2>
+          <div class=intro>
+            <article class=intro>
+              <h3 class=intro>About me</h3>
+              <section id=intro>I'm a curious soul interested in knowing how things work and what motivated people to act the way they do. Every day I try to learn a little more about a new subject. I'm currently studying at Trybe and every day I feel an improvement in my hard and soft skills. I'm definitely a better version than yesterday, and that's what motivates me to keep working on it.</section>
+            </article>
+          </div>
+          
+          <div id="articles">
+            <div class="lado-esquerdo">
+              <section class="skills">
+                <img class="icon" src="images/pencil.png" alt="Pencil and tool">
+                  <h4>My Hard Skills</h4>
+                  <p>These are some of the skills I've been learning so far:</p>
+                  <ol id="licoes_aprendidas">
+                    <li>Unix</li>
+                    <li>Shell</li>
+                    <li>Bash</li>
+                    <li>Git</li>
+                    <li>Github</li>
+                    <li>How internet works</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>HTML Semantic</li>
+                    <li>Soft Skills</li>
+                  </ol>
+              </section>
+            </div>
+            <div class="lado-direito">
+              <section class="skills">
+                <img class="icon" src="images/heart.png" alt="Heart">
+                  <h4>What I will learn next</h4>
+                  <p>These are some of the skills I'll be working on next:</p>
+                  <ul id="licoes_a_aprender">
+                    <li>JavaScript</li>
+                    <li>DOM</li>
+                    <li>Forms</li>
+                    <li>CSS Responsive</li>
+                    <li>ES6</li>
+                    <li>HOF</li>
+                    <li>Unit Tests</li>
+                    <li>React</li>
+                    <li>Node</li>
+                    <li>SQL</li>
+                  </ul>
+              </section>
+            </div>
+          </div>
+
+          <aside>
+            <img class="icon" src="images/online-learning.png" alt="Computer representing online learning">
+                    <p>Despite the short time in contact with coding, I feel that I have finally found my way into this world. The feeling of making something from scratch and seeing your project work as expected is priceless.</p>
+          </aside>
+      </main>
+      <table>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+      </table>
+
+      <footer id="rodape">
+          <div class="contact">
+            <a class="contact" href="https://www.linkedin.com/in/lysprestes/" target="_blank"><img class="contact"src="images/linkedin.png" alt="LinkedIn Logo"></a>
+          </div>
+          <div class="contact">
+            <a class="contact" href="https://github.com/lysprestes" target="_blank"><img class="contact"src="images/github.png" alt="GitHub Logo"></a>
+          </div>
+      </footer>
+  </body>
 </html>
